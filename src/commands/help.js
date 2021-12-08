@@ -15,11 +15,11 @@ class HelpCommand extends Command {
     .setColor(embedcolor)
     .setAuthor(botname, botimage)
     .setTitle('Help Command')
-    .setDescription('Select The Command Category:')
+    .setDescription(`Select The Command Category: \n Prefixes: ${prefixarray[0]}, ${prefixarray[1]}, ${prefixarray[2]}`)
     .addFields(
         {
             name: 'General',
-            value: `${prefixarray[0]}ping or ${prefixarray[1]}ping or ${prefixarray[2]}ping = A simple Ping Command`
+            value: `ping = A simple Ping Command`
         },
         {
             name: 'Moderation',
