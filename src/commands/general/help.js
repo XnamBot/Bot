@@ -1,6 +1,6 @@
 const { Command } = require('@sapphire/framework');
 const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');
-const { embedcolor, botname, botimage, prefixarray} = require('./../../config.json')
+const { embedcolor, botname, botimage, prefixarray} = require('./../../../config.json')
 class HelpCommand extends Command {
   constructor(context, options) {
     super(context, {

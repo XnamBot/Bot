@@ -1,6 +1,6 @@
 const { Command } = require('@sapphire/framework');
 const { MessageEmbed } = require('discord.js');
-const { embedcolor, botname, botimage} = require('./../../config.json')
+const { embedcolor, botname, botimage} = require('./../../../config.json')
 class PingCommand extends Command {
   constructor(context, options) {
     super(context, {
