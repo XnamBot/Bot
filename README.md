@@ -1,30 +1,15 @@
-# TypeScript Sapphire Bot example
+# Xnam Bot
 
-This is a basic setup of a Discord bot using the [sapphire framework][sapphire] written in TypeScript
+## Presquisites:
+* Nodemon (Installed globally)
+* Build tools (Installed globally)
+* tsc (Installed globally)
 
-## How to use it?
-
-### Prerequisite
-
+## How to run in production:
 ```sh
-npm install
+npm run start
 ```
 
-### Development
-
-This example can be run with `tsc-watch` to watch the files and automatically restart your bot.
-
-```sh
-npm run watch:start
-```
-
-### Production
-
-You can also run the bot with `npm dev`, this will first build your code and then run `node ./dist/index.js`. But this is not the recommended way to run a bot in production.
-
-## License
-
-Dedicated to the public domain via the [Unlicense], courtesy of the Sapphire Community and its contributors.
-
-[sapphire]: https://github.com/sapphiredev/framework
-[unlicense]: https://github.com/sapphiredev/examples/blob/main/LICENSE.md
+## How to run in development:
+Open 2 CMD terminals
+in one run `npm run watch` in the other run `npm i && nodemon -w`
