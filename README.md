@@ -12,4 +12,4 @@ npm run start
 
 ## How to run in development:
 Open 2 CMD terminals
-in one run `npm run watch` in the other run `npm i && nodemon -w`
+in one run `npm i && nodemon -w` in the other run `npm run watch`
