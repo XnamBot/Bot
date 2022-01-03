@@ -37,7 +37,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "start": "npm i && npm i && node .",
+    "start": "npm i && tsc && node .",
     "dev": "run-s build start",
     "watch:start": "tsc-watch --onSuccess \"node ./dist/index.js\"",
     "format": "prettier --write \"src/**/*.ts\""
