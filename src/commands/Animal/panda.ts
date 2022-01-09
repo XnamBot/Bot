@@ -4,7 +4,7 @@ import type { Message } from 'discord.js';
 import { AnimalApi } from '../../lib/pets';
 
 @ApplyOptions<SubCommandPluginCommandOptions>({
-	description: 'Panda Images'
+	description: 'Commands.Animal.Panda'
 })
 export class UserCommand extends SubCommandPluginCommand {
 	public async messageRun(message: Message) {

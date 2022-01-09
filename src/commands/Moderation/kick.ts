@@ -5,7 +5,7 @@ import type { Message } from 'discord.js';
 import { EmbedTemplate } from '../../lib/embeds';
 
 @ApplyOptions<SubCommandPluginCommandOptions>({
-	description: 'KICK',
+	description: 'Commands.Moderation.Kick',
 	requiredUserPermissions: 'KICK_MEMBERS'
 })
 export class UserCommand extends SubCommandPluginCommand {

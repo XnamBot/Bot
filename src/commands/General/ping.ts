@@ -4,7 +4,7 @@ import { send } from '@sapphire/plugin-editable-commands';
 import type { Message } from 'discord.js';
 import { EmbedTemplate } from '../../lib/embeds';
 @ApplyOptions<CommandOptions>({
-	description: 'ping pong'
+	description: 'Commands.General.Ping'
 })
 export class UserCommand extends Command {
 	public async messageRun(message: Message) {

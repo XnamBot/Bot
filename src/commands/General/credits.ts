@@ -4,7 +4,7 @@ import type { Message } from 'discord.js';
 import { EmbedTemplate } from '../../lib/embeds';
 
 @ApplyOptions<SubCommandPluginCommandOptions>({
-	description: 'Bot credits'
+	description: 'Commands.General.Credits'
 })
 export class UserCommand extends SubCommandPluginCommand {
 	public async messageRun(message: Message) {

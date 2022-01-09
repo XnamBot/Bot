@@ -8,7 +8,7 @@ import { inspect } from 'util';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['ev'],
-	description: 'Evals any JavaScript code',
+	description: 'Commands.Owner.Eval',
 	quotes: [],
 	preconditions: ['OwnerOnly'],
 	flags: ['async', 'hidden', 'showHidden', 'silent', 's'],

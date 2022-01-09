@@ -4,7 +4,7 @@ import type { Message } from 'discord.js';
 import { AnimalApi } from '../../lib/pets';
 
 @ApplyOptions<SubCommandPluginCommandOptions>({
-	description: 'Fox Images'
+	description: 'Commands.Animal.Fox'
 })
 export class UserCommand extends SubCommandPluginCommand {
 	public async messageRun(message: Message) {

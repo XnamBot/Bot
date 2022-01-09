@@ -5,7 +5,7 @@ import type { Message } from 'discord.js';
 import { EmbedTemplate } from '../../lib/embeds';
 
 @ApplyOptions<SubCommandPluginCommandOptions>({
-	description: 'BAN',
+	description: 'Commands.Moderation.Ban',
 	requiredUserPermissions: 'BAN_MEMBERS',
 })
 export class UserCommand extends SubCommandPluginCommand {
