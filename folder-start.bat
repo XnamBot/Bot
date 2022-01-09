@@ -1,0 +1,3 @@
+tsc
+node .
+pause
