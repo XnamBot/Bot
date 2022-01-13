@@ -1,12 +1,12 @@
 import { ApplyOptions } from '@sapphire/decorators';
-import { SubCommandPluginCommand, SubCommandPluginCommandOptions } from '@sapphire/plugin-subcommands';
 import type { Message } from 'discord.js';
 import { AnimalApi } from '../../lib/pets';
+import { Command, CommandOptions } from '@sapphire/framework';
 
-@ApplyOptions<SubCommandPluginCommandOptions>({
+@ApplyOptions<CommandOptions>({
 	description: 'Commands.Animal.Bird'
 })
-export class UserCommand extends SubCommandPluginCommand {
+export class UserCommand extends Command {
 	public async MessageCommand(message: Message) {
 		return message.channel.send(await AnimalApi(true, 'bird'));
 	}
