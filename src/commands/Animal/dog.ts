@@ -7,7 +7,7 @@ import { AnimalApi } from '../../lib/pets';
 	description: 'Commands.Animal.Dog'
 })
 export class UserCommand extends SubCommandPluginCommand {
-	public async messageRun(message: Message) {
+	public async MessageCommand(message: Message) {
 		message.channel.send(await AnimalApi(true, 'dog'));
 	}
 }
