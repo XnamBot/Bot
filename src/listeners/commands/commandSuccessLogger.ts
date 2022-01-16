@@ -1,18 +1,18 @@
-import type { MessageCommandSuccessPayload, ListenerOptions, PieceContext } from '@sapphire/framework';
+import type { CommandSuccessPayload, ListenerOptions, PieceContext } from '@sapphire/framework';
 import { Command, Events, Listener, LogLevel } from '@sapphire/framework';
 import type { Logger } from '@sapphire/plugin-logger';
 import { cyan } from 'colorette';
 import type { Guild, User } from 'discord.js';
 
-export class UserEvent extends Listener<typeof Events.MessageCommandSuccess> {
+export class UserEvent extends Listener<typeof Events.CommandSuccess> {
 	public constructor(context: PieceContext, options?: ListenerOptions) {
 		super(context, {
 			...options,
-			event: Events.MessageCommandSuccess
+			event: Events.CommandSuccess
 		});
 	}
 
-	public run({ message, command }: MessageCommandSuccessPayload) {
+	public run({ message, command }: CommandSuccessPayload) {
 		const shard = this.shard(message.guild?.shardId ?? 0);
 		const commandName = this.command(command);
 		const author = this.author(message.author);
