@@ -9,7 +9,7 @@ import { EmbedTemplate } from '../../lib/embeds';
 	requiredUserPermissions: 'BAN_MEMBERS',
 })
 export class UserCommand extends SubCommandPluginCommand {
-	public async MessageCommand(message: Message, args: Args) {
+	public async messageRun(message: Message, args: Args) {
 		const member = await args.pick('member');
 		try {
 			member.ban()

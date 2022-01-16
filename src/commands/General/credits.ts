@@ -7,7 +7,7 @@ import { EmbedTemplate } from '../../lib/embeds';
 	description: 'Commands.General.Credits'
 })
 export class UserCommand extends SubCommandPluginCommand {
-	public async MessageCommand(message: Message) {
+	public async messageRun(message: Message) {
 		message.channel.send({embeds: [EmbedTemplate('Credits', `**Owner**: \nSean Outram \nhttps://sean-outram.dev`, 'All those credits')]})
 	}
 }
