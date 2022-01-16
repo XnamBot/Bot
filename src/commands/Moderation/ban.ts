@@ -1,14 +1,14 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import type { Args } from '@sapphire/framework';
+import { SubCommandPluginCommand, SubCommandPluginCommandOptions } from '@sapphire/plugin-subcommands';
 import type { Message } from 'discord.js';
 import { EmbedTemplate } from '../../lib/embeds';
-import { Command, CommandOptions } from '@sapphire/framework';
 
-@ApplyOptions<CommandOptions>({
+@ApplyOptions<SubCommandPluginCommandOptions>({
 	description: 'Commands.Moderation.Ban',
 	requiredUserPermissions: 'BAN_MEMBERS',
 })
-export class UserCommand extends Command {
+export class UserCommand extends SubCommandPluginCommand {
 	public async MessageCommand(message: Message, args: Args) {
 		const member = await args.pick('member');
 		try {
