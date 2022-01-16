@@ -1,14 +1,14 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import type { Args } from '@sapphire/framework';
-import { SubCommandPluginCommand, SubCommandPluginCommandOptions } from '@sapphire/plugin-subcommands';
+import { Command, CommandOptions } from '@sapphire/framework';
 import type { Message } from 'discord.js';
 import { EmbedTemplate } from '../../lib/embeds';
 
-@ApplyOptions<SubCommandPluginCommandOptions>({
+@ApplyOptions<CommandOptions>({
 	description: 'Commands.Moderation.Kick',
 	requiredUserPermissions: 'KICK_MEMBERS'
 })
-export class UserCommand extends SubCommandPluginCommand {
+export class UserCommand extends Command {
 	public async messageRun(message: Message, args: Args) {
 		const member = await args.pick('member');
 		try {

@@ -1,12 +1,12 @@
 import { ApplyOptions } from '@sapphire/decorators';
-import { SubCommandPluginCommand, SubCommandPluginCommandOptions } from '@sapphire/plugin-subcommands';
+import { Command, CommandOptions } from '@sapphire/framework';
 import type { Message } from 'discord.js';
 import { EmbedTemplate } from '../../lib/embeds';
 
-@ApplyOptions<SubCommandPluginCommandOptions>({
+@ApplyOptions<CommandOptions>({
 	description: 'Commands.General.Credits'
 })
-export class UserCommand extends SubCommandPluginCommand {
+export class UserCommand extends Command {
 	public async messageRun(message: Message) {
 		message.channel.send({embeds: [EmbedTemplate('Credits', `**Owner**: \nSean Outram \nhttps://sean-outram.dev`, 'All those credits')]})
 	}
