@@ -9,7 +9,7 @@ import { config } from 'dotenv-cra';
 import { join } from 'path';
 import { inspect } from 'util';
 import { srcDir } from './constants';
-
+require('./container_additions');
 // Read env var
 config({ path: join(srcDir, '.env') });
 
