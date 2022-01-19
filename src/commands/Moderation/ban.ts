@@ -8,7 +8,7 @@ import { EmbedTemplate } from '../../lib/embeds';
 	description: 'Commands.Moderation.Ban',
 	requiredUserPermissions: 'BAN_MEMBERS',
 })
-export class UserCommand extends Command {
+export class BanModerationCommand extends Command {
 	public async messageRun(message: Message, args: Args) {
 		const member = await args.pick('member');
 		try {

@@ -6,7 +6,7 @@ import { AnimalApi } from '../../lib/pets';
 @ApplyOptions<CommandOptions>({
 	description: 'Commands.Animal.Dog'
 })
-export class UserCommand extends Command {
+export class DogAnimalCommand extends Command {
 	public async messageRun(message: Message) {
 		message.channel.send(await AnimalApi(true, 'dog'));
 	}

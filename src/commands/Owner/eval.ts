@@ -13,7 +13,7 @@ import { inspect } from 'util';
 	flags: ['async', 'hidden', 'showHidden', 'silent', 's'],
 	options: ['depth']
 })
-export class UserCommand extends Command {
+export class EvalOwnerCommand extends Command {
 	public async messageRun(message: Message, args: Args) {
 		const code = await args.rest('string');
 
