@@ -29,3 +29,4 @@ jobs:
         cache: 'npm'
     - run: npm i
     - run: npm run buildtest:build
+    - run: npm run buildtest:testbyfire
