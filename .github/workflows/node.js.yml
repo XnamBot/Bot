@@ -29,4 +29,4 @@ jobs:
         cache: 'npm'
     - run: npm i
     - run: npm run buildtest:build
-    - run: node dist/index.js ${{ secrets.TESTING_DISCCORD_TOKEN }}
+    - run: node dist/trialbyfire.js DISCORD_TOKEN=${{ secrets.TESTING_DISCCORD_TOKEN }}
