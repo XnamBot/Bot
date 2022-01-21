@@ -3,3 +3,4 @@ dist/
 src/.env
 json.sqlite
 env.example
+.github/
