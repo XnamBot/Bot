@@ -6,6 +6,7 @@ fs.readdir(directoryPath, function (err, files) {
         return console.log('Unable to scan directory: ' + err);
     } 
     files.forEach(function (file) {
-        require(file)
+        const filtered = filter(file => file.endsWith('.js'));
+        require(filtered)
     });
 });
