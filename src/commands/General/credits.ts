@@ -8,6 +8,6 @@ import { EmbedTemplate } from '../../lib/embeds';
 })
 export class CreditsGeneralCommand extends Command {
 	public async messageRun(message: Message) {
-		message.channel.send({embeds: [EmbedTemplate('Credits', `**Owner**: \nSean Outram \nhttps://sean-outram.dev`, 'All those credits')]})
+		message.channel.send({ embeds: [EmbedTemplate('Credits', `**Owner**: \nSean Outram \nhttps://sean-outram.dev`, 'All those credits')] });
 	}
 }

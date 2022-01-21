@@ -1,20 +1,23 @@
 # TODO
 
 ## Backend:
-* Develop Website api's
-* Find hosting
-* Proper Database
-* Cdn
+
+-   Develop Website api's
+-   Find hosting
+-   Proper Database
+-   Cdn
 
 ## Frontend:
-* Develop Website frontend
-* Develop bot interface
-* Advertising??
+
+-   Develop Website frontend
+-   Develop bot interface
+-   Advertising??
 
 ## Modules:
-* Music **POSSIBLY**
-* Facts
-* Dev
-* Logging
-* Social Media
-* Modules
+
+-   Music **POSSIBLY**
+-   Facts
+-   Dev
+-   Logging
+-   Social Media
+-   Modules
