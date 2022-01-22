@@ -18,6 +18,8 @@ export class XnamClient extends SapphireClient {
 				'DIRECT_MESSAGES',
 				'DIRECT_MESSAGE_REACTIONS'
 			],
+			loadDefaultErrorListeners: true,
+			loadMessageCommandListeners: true,
 			api: {
 				auth: {
 					// The application/client ID of your bot
