@@ -1,6 +1,6 @@
 import './lib/setup';
 import '@sapphire/plugin-api/register';
-import { XnamClient } from './lib/xnamclient';
+import { XnamClient } from './lib/structures/client';
 const client = new XnamClient();
 
 const main = async () => {
