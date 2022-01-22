@@ -1,12 +1,13 @@
 import { ApplyOptions } from '@sapphire/decorators';
-import { Command, CommandOptions } from '@sapphire/framework';
+import type { CommandOptions } from '@sapphire/framework';
 import type { Message } from 'discord.js';
 import { AnimalApi } from '../../lib/pets';
+import { XnamCommand } from '../../lib/structures/command';
 
 @ApplyOptions<CommandOptions>({
 	description: 'Commands.Animal.Fox'
 })
-export class FoxAnimalCommand extends Command {
+export class FoxAnimalCommand extends XnamCommand {
 	public async messageRun(message: Message) {
 		return message.channel.send(await AnimalApi(true, 'fox'));
 	}

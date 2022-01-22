@@ -1,11 +1,13 @@
 import { ApplyOptions } from '@sapphire/decorators';
-import { Command, CommandOptions } from '@sapphire/framework';
+import type { CommandOptions } from '@sapphire/framework';
 import type { Message } from 'discord.js';
 import { EmbedTemplate } from '../../lib/embeds';
+import { XnamCommand } from '../../lib/structures/command';
+
 @ApplyOptions<CommandOptions>({
 	description: 'Commands.General.Ping'
 })
-export class PingGeneralCommand extends Command {
+export class PingGeneralCommand extends XnamCommand {
 	public async messageRun(message: Message) {
 		const msg = await message.channel.send('Ping?');
 		message.channel.send({

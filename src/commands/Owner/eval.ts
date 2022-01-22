@@ -1,9 +1,10 @@
 import { ApplyOptions } from '@sapphire/decorators';
-import { Args, Command, CommandOptions } from '@sapphire/framework';
+import type { Args, CommandOptions } from '@sapphire/framework';
 import { Type } from '@sapphire/type';
 import { codeBlock, isThenable } from '@sapphire/utilities';
 import type { Message } from 'discord.js';
 import { inspect } from 'util';
+import { XnamCommand } from '../../lib/structures/command';
 
 @ApplyOptions<CommandOptions>({
 	aliases: ['ev'],
@@ -13,7 +14,7 @@ import { inspect } from 'util';
 	flags: ['async', 'hidden', 'showHidden', 'silent', 's'],
 	options: ['depth']
 })
-export class EvalOwnerCommand extends Command {
+export class EvalOwnerCommand extends XnamCommand {
 	public async messageRun(message: Message, args: Args) {
 		const code = await args.rest('string');
 
