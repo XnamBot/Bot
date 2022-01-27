@@ -3,9 +3,9 @@
 ## Backend:
 
 -   Develop Website api's
--   Find hosting
+-   Find hosting **Possibly Sorted**
 -   Proper Database
--   Cdn
+-   Cdn **In the future**
 
 ## Frontend:
 
