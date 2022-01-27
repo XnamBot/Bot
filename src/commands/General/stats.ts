@@ -13,6 +13,19 @@ export class StatsGeneralCommand extends XnamCommand {
 	public async messageRun(message: Message) {
 		const table = new db.table('stats');
 		const totalmessages = table.get('totalmessages');
-		message.channel.send({embeds: [FourFieldEmbedTemplate(this.container.config, 'stats', 'Statistics!', 'STATS!',{name: 'Total Messages', value: `${totalmessages}`}, {name: 'Memory', value: `${os.freemem() / 1000000} MB /${os.totalmem() / 1000000} MB`}, {name: 'Uptime', value: `${os.uptime}`}, {name: 'Cpu Architecture', value: `${os.arch}`})]})
+		message.channel.send({
+			embeds: [
+				FourFieldEmbedTemplate(
+					this.container.config,
+					'stats',
+					'Statistics!',
+					'STATS!',
+					{ name: 'Total Messages', value: `${totalmessages}` },
+					{ name: 'Memory', value: `${os.freemem() / 1000000} MB /${os.totalmem() / 1000000} MB` },
+					{ name: 'Uptime', value: `${os.uptime}` },
+					{ name: 'Cpu Architecture', value: `${os.arch}` }
+				)
+			]
+		});
 	}
 }
