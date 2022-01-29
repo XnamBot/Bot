@@ -5,6 +5,6 @@ export function EmbedTemplate(command: string, description: string, footer: stri
 		.setColor('#ff6600')
 		.setTitle(`${settings.botname} | ${command}`)
 		.setDescription(`${description}`)
-		.setFooter({text: `${footer}`})
+		.setFooter({ text: `${footer}` });
 	return embed;
 }

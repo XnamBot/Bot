@@ -24,22 +24,16 @@ export class PingGeneralCommand extends XnamCommand {
 			]
 		});
 	}
-	public override async chatInputRun(interaction : CommandInteraction) {
+	public override async chatInputRun(interaction: CommandInteraction) {
 		interaction.reply({
-			embeds: [
-				EmbedTemplate(
-					'Ping',
-					`Bot Latency: ${Math.round(this.container.client.ws.ping)}ms`,
-					`Ping, Pong`
-				)
-			]
-		})
+			embeds: [EmbedTemplate('Ping', `Bot Latency: ${Math.round(this.container.client.ws.ping)}ms`, `Ping, Pong`)]
+		});
 	}
 	public override registerApplicationCommands(registry: ApplicationCommandRegistry) {
 		registry.registerChatInputCommand(
 			{
 				name: this.name,
-				description: 'Ping Pong',
+				description: 'Ping Pong'
 			},
 			{
 				guildIds: slashiesguilid(),
