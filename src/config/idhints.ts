@@ -1,6 +1,6 @@
 export const idhints = {
     // General
-    ping: ['', ''],
+    ping: ['936987675217518643', ],
     credits: ['', ''],
     stats:  ['', ''],
     // Animal
