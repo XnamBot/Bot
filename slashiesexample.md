@@ -19,7 +19,7 @@ public override registerApplicationCommands(registry: ApplicationCommandRegistry
 		},
 		{
 			guildIds: slashiesguilid(),
-			idHints: slashiesidhint(`${this.name}`)
+			idHints: slashiesidhint(`|name|`)
 		}
 	);
 }
