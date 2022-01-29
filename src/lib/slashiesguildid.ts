@@ -1,8 +1,7 @@
-import { container } from "@sapphire/framework";
 
-export function slashiesguilid() {
+export function slashiesguilid(): any {
     if (process.env.NODE_ENV == 'development') {
-        return `${container.config.devserverid}`
+        return ['901374570353790997 ']
     } else {
         return ''
     }
