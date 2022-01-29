@@ -7,7 +7,7 @@ container.embed = EmbedTemplate;
 // Container Declarations
 declare module '@sapphire/pieces' {
 	interface Container {
-		config: object;
+		config: any;
 		embed: any;
 	}
 }
