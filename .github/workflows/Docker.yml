@@ -19,7 +19,7 @@ jobs:
     - name: Build-Push
       uses: docker/build-push-action@v2
       with:
-         context: /
+         context: ${{ github.workspace }}
          tags:
            devramsean0/xnam-bot
          push: ${{ github.ref == 'refs/heads/main' }}
