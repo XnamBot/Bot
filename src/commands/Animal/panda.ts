@@ -1,6 +1,6 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import type { CommandOptions, ApplicationCommandRegistry } from '@sapphire/framework';
-import type { CommandInteraction} from 'discord.js';
+import type { CommandInteraction } from 'discord.js';
 import { AnimalApi } from 'xnam-api';
 import { XnamCommand } from '../../lib/structures/command';
 import { slashiesguilid } from '../../lib/slashiesguildid';

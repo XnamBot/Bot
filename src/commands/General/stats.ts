@@ -31,7 +31,7 @@ export class StatsGeneralCommand extends XnamCommand {
 		});
 	}
 	public override async chatInputRun(interaction: CommandInteraction) {
-		interaction.deferReply()
+		interaction.deferReply();
 		const table = new db.table('stats');
 		const totalmessages = table.get('totalmessages');
 		interaction.editReply({
