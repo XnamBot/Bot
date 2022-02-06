@@ -12,24 +12,18 @@ export function slashiesidhint(command: string) {
 			return container.idhints.stats[num];
 		}
 		// Animal
-		else if (command == 'bird') {
-			return container.idhints.bird[num];
-		} else if (command == 'cat') {
-			return container.idhints.cat[num];
-		} else if (command == 'dog') {
-			return container.idhints.dog[num];
-		} else if (command == 'fox') {
-			return container.idhints.fox[num];
-		} else if (command == 'koala') {
-			return container.idhints.koala[num];
-		} else if (command == 'panda') {
-			return container.idhints.panda[num];
+		else if(command == 'animal') {
+			return container.idhints.animal[num]
 		}
 		// Moderation
 		else if (command == 'ban') {
 			return container.idhints.ban[num];
 		} else if (command == 'kick') {
 			return container.idhints.kick[num];
+		}
+		// Games
+		else if(command == 'games') {
+			return container.idhints.games[num]
 		}
 	} else {
 		var num = 1;
@@ -42,24 +36,18 @@ export function slashiesidhint(command: string) {
 			return container.idhints.stats[num];
 		}
 		// Animal
-		else if (command == 'bird') {
-			return container.idhints.bird[num];
-		} else if (command == 'cat') {
-			return container.idhints.cat[num];
-		} else if (command == 'dog') {
-			return container.idhints.dog[num];
-		} else if (command == 'fox') {
-			return container.idhints.fox[num];
-		} else if (command == 'koala') {
-			return container.idhints.koala[num];
-		} else if (command == 'panda') {
-			return container.idhints.panda[num];
+		else if(command == 'animal') {
+			return container.idhints.animal[num]
 		}
 		// Moderation
 		else if (command == 'ban') {
 			return container.idhints.ban[num];
 		} else if (command == 'kick') {
 			return container.idhints.kick[num];
+		}
+		// Games
+		else if(command == 'games') {
+			return container.idhints.games[num]
 		}
 	}
 }
