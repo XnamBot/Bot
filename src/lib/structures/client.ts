@@ -1,5 +1,5 @@
 import { SapphireClient } from '@sapphire/framework';
-
+const STATCORD_API_KEY: any = process.env.STATCORD_API_KEY
 export class XnamClient extends SapphireClient {
 	public constructor() {
 		super({
@@ -47,6 +47,14 @@ export class XnamClient extends SapphireClient {
 					// The port the API will listen on
 					port: 4000
 				}
+			},
+			statcord: {
+				client_id: process.env.CLIENT_ID,
+				key: STATCORD_API_KEY, 
+				autopost: true,
+				baseUrl: 'https://api.statcord.com/v3',
+				debug: false,
+				sharding: false
 			}
 		});
 	}
