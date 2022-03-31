@@ -43,7 +43,8 @@
 		"watch:start": "tsc-watch --onSuccess \"node ./dist/index.js\"",
 		"format": "prettier --write \"src/**/*.ts\"",
 		"buildtest:build": "tsc",
-		"prod": "tsc && NODE_ENV node ."
+		"prod": "tsc && NODE_ENV node .",
+		"refresh": "rm -r node_modules && rm -r dist && npm i && tsc && echo '[SCRIPT] Success"
 	},
 	"prettier": "@sapphire/prettier-config"
 }
