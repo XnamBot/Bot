@@ -19,7 +19,7 @@
 		"@sapphire/type": "^2.1.2",
 		"@sapphire/utilities": "^3.1.0",
 		"discord.js": "^13.3.1",
-		"dotenv-cra": "^3.0.2",
+		"dotenv": "^16.0.0",
 		"node-fetch": "^2.6.6",
 		"quick.db": "github:plexidev/quick.db#tempfix-typescript-1",
 		"reflect-metadata": "^0.1.13",
